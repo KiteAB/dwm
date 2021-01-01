@@ -105,7 +105,8 @@ static const char *screenlockcmd[]  = { "/home/kiteab/scripts/screenlock.sh", NU
 static const char *incbacklightcmd[]  = { "/home/kiteab/scripts/inc-backlight.sh", NULL};
 static const char *decbacklightcmd[]  = { "/home/kiteab/scripts/dec-backlight.sh", NULL};
 
-static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
+static const char *screenshotcmd[] = { "flameshot", NULL, NULL };
+static const char *emacscmd[] = { "emacs", NULL, NULL };
 
 static Key keys[] = {
 	/* modifier            key                      function        argument */
@@ -127,6 +128,7 @@ static Key keys[] = {
 	{ MODKEY,              XK_b,                    spawn,          {.v = wpcmd } },
 	{ MODKEY,              XK_comma,                spawn,          {.v = decbacklightcmd } },
 	{ MODKEY,              XK_period,               spawn,          {.v = incbacklightcmd } },
+	{ MODKEY,              XK_x,                    spawn,          {.v = emacscmd} },
 	{ 0,                   XK_Print,                spawn,          {.v = screenshotcmd } },
 	{ MODKEY|ShiftMask,    XK_e,                    rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,    XK_u,                    rotatestack,    {.i = -1 } },
