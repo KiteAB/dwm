@@ -53,7 +53,7 @@ static const Rule rules[] = {
 	{ "Emulator",            NULL,       NULL,       0,            1,           -1 },
 	{ "quemu-system-i386",   NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",             NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "netease-cloud-music", NULL,       NULL,       0,            1,           -1 },
+	{ "hmcl",                NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
